@@ -6,7 +6,8 @@ function changediv()
 	    output.innerHTML = '<span class="grey ital">Expect Output here<span>'
 	else
 	{
-	    splits = txtarea.value.split(' ')
+	    inputdata = txtarea.value.replace('\n',' <br /> ')
+	    splits = inputdata.split(' ')
 	    list = dataObj()
 	    for(var i=0;i<splits.length;i++)
 	    {
@@ -25,7 +26,7 @@ function changediv()
 	        }
 	    }
 	    data = splits.join(' ')
-	    
+	    data = data.replace(' <br /> ','<br />')
 	    output.innerHTML = data
 	}
 }
@@ -50,7 +51,7 @@ function dataObj()
 						 "Connect", "Correlation", "Develop", "Dramatise", "Experiment", "With", "Group", "Identify",
 						 "Link", "Make use of", "Model", "Organise", "Perform", "Plan", "Relate", "Represent", "Simulate",
 						 "Summarise", "Teach", "Translate"],
-          "analysis":["Analyse", "Categorize", "Compare", "Contrast", "Separate", "Characterize", "Classify", "Debate", "Deduce", 
+          "analysis":["Analyse", "Analyze", "Categorize", "Compare", "Contrast", "Separate", "Characterize", "Classify", "Debate", "Deduce", 
 					  "Diagram", "Differentiate", "Discriminate", "Distinguish", "Examine", "Outline", "Relate", "Research", 
 					  "Appraise", "Breakdown", "Calculate", "Criticize", "Derive", "Experiment", "Identify", "Illustrate", 
 					  "Infer", "Interpret", "Model", "Outline", "Point out", "Question", "Select", "Subdivide", "Test", 
