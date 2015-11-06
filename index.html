@@ -62,7 +62,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#about" class="page-scroll">About</a>
+                        <a href="#help" class="page-scroll">HELP</a>
                     </li>
                 </ul>
             </div>
@@ -72,31 +72,54 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    
+    <div  class="container">
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Bloom's Taxonomy</h1>
+                <h1>Bloom's Taxonomy</h1><br />
                 <div class="col-sm-6">
-                    <textarea class="inp size" id = "txtarea" onkeyup="changediv()"></textarea>
+                    <textarea class="inp size left" id = "txtarea" placeholder = "Enter your questions here" onkeyup="changediv()"></textarea>
                 </div>
                 <div class="col-sm-6">
-                    <div><pre class="out size" id="output"><span class="grey ital">Expect Output here<span></pre></div>
+                    <div><pre class="out size left" id="output"><span class="grey ital">Expect Output here<span></pre></div>
                 </div>
             </div>
+        </div>
+    </div>
+    <br /><br id="help"/><br /><br />
+    <div   class="container">   
+        <div class="row text-center">
+            <h1>Small Tips to help you better</h1><br />
+         </div>
+         <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-sm-4"><span class="ital helptxt justify">&nbsp;&nbsp;&nbsp;&nbsp;Enter any question or paragraph on the left hand side. The right hand pane gives you the instant output classifying your input into the different cognitive levels of Bloom's Taxonomy. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp;Refer to the image aside for the colour coding of the different domains. <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;For more details about Bloom's Taxonomy read the <a href="https://en.wikipedia.org/wiki/Bloom%27s_taxonomy" class="knowledge">Wikipedia Page</a> on Blooms Taxonomy.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;For more details about the project you can visit <a href="https://github.com/future-blooming/future-blooming.github.io" class="knowledge">this page</a></span></div>
+                    <div class="col-sm-4"><img src="img/ColorScheme.png" height="300px" width="300px" /></div>
+                    <div class="col-sm-4">
+                    <span class="ital helptxt justify">&nbsp;&nbsp;&nbsp;&nbsp;The original Bloom's Classification of the cognitive domain consisted of the following six levels:
+                    <ul class="arrow">
+                        <li><span class="knowledge blacken">Knowledge</span></li>
+                        <li><span class="comprehension blacken">Comprehension</span></li>
+                        <li><span class="application blacken">Application</span></li>
+                        <li><span class="analysis blacken">Analysis</span></li>
+                        <li><span class="synthesis blacken">Synthesis</span></li>
+                        <li><span class="evaluation blacken">Evaluation</span></li>
+                    </ul>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;These are arranged in that order to indicate the gradual change in the type of cognitive sense required to understand the problem.<!-- with <span class="knowledge blacken">Knowledge</span> implying the requirement of memory down to <span class="evaluation blacken">Evaluation</span> implying the usage of judgemental and thought processes. -->
+                    
+                    </span>
+                    </div>
+                </div>
         </div>
         <!-- /.row -->
 
     </div>
+    
     <!-- /.container -->
-
-    <div id = "about" class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Team</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
+    <br /><br /><br />
+    <div  class="container">
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
@@ -145,7 +168,6 @@
                 </div>
             </div>
         </div>
-
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
