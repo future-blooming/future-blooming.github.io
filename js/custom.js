@@ -40,7 +40,7 @@ function changediv()
 	    data = splits.join(' ')
 	    data = data.replace(' <br /> ','<br />')
 	    output.innerHTML = data
-	    level.innerHTML = ''+ Math.round(finalvalue * 100.0/ totalwords) / 100
+	    level.innerHTML = (totalwords!=0) ? (''+ Math.round(finalvalue * 100.0/ totalwords) / 100) : '0' ;
 	}
 }
 function getValue(key)
