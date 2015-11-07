@@ -10,7 +10,7 @@ function changediv()
 	}
 	else
 	{
-	    inputdata = txtarea.value.replace(/\n/g,' ').replace(/\r/g,' ')
+	    inputdata = txtarea.value.replace(/\n/g,' \n ').replace(/\r/g,' \n ')
 	    splits = inputdata.split(' ')
 	    list = dataObj()
 	    
@@ -38,7 +38,7 @@ function changediv()
 	        }
 	    }
 	    data = splits.join(' ')
-	    data = data.replace(' <br /> ','<br />')
+	    data = data.replace(/ \\n /g,'\n')
 	    output.innerHTML = data
 	    level.innerHTML = (totalwords!=0) ? (''+ Math.round(finalvalue * 100.0/ totalwords) / 100) : '0' ;
 	}
