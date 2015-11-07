@@ -190,7 +190,15 @@
 .red
 {
     color:red;
-}		
+}
+.twitter
+{
+    color:#4099FF		
+}
+.twitter:hover
+{
+    color:red
+}
 pre {
     white-space: pre-wrap;       /* CSS 3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -201,4 +209,8 @@ pre {
 #level
 {
     float:right;
-}					
+}	
+.share
+{
+    height:30px
+}				
