@@ -2,16 +2,26 @@ function changediv()
 {
 	txtarea = document.getElementById("txtarea");
 	output = document.getElementById("output");
+	level = document.getElementById("level");
 	if (txtarea.value=="")
+	{    
 	    output.innerHTML = '<span class="grey ital">Expect Output here<span>'
+	    level.innerHTML = '0'
+	}
 	else
 	{
-	    inputdata = txtarea.value.replace('\n',' <br /> ')
+	    inputdata = txtarea.value.replace(/\n/g,' ').replace(/\r/g,' ')
 	    splits = inputdata.split(' ')
 	    list = dataObj()
+	    
+	    finalvalue = 0
+	    totalwords = 0
+	    
 	    for(var i=0;i<splits.length;i++)
 	    {
 	        var word = splits[i]
+	        if (word.indexOf('<span class')>=0) 
+	            word = word.substring(word.indexOf('>')+1,word.lastIndexOf('<'))
 	        for (var key in list)
 	        {
 	            for (var j = 0; j<list[key].length;j++)
@@ -21,6 +31,8 @@ function changediv()
 	                {
 	                    var fillvalue = "<span class='"+key+"' title='Belongs to the "+key+" domain'>"+word+"</span>"
 	                    splits[i] = fillvalue
+	                    finalvalue += getValue(key)
+	                    totalwords += 1 
 	                }
 	            }
 	        }
@@ -28,9 +40,20 @@ function changediv()
 	    data = splits.join(' ')
 	    data = data.replace(' <br /> ','<br />')
 	    output.innerHTML = data
+	    level.innerHTML = ''+ Math.round(finalvalue * 100.0/ totalwords) / 100
 	}
 }
-
+function getValue(key)
+{
+    return {
+            "knowledge":1,
+            "comprehension":2,
+            "application":3,
+            "analysis":4,
+            "synthesis":5,
+            "evaluation":6
+           }[key]
+}
 function dataObj()
 {
     return {"knowledge":["Write", "List", "Label", "Name", "State", "Define", "Count", "Describe", "Draw", "Find", "Identify", "Match", 
@@ -47,7 +70,7 @@ function dataObj()
           "application":["Use", "Compute", "Solve", "Demonstrate", "Apply", "Construct", "Change", "Choose", "Dramatize", "Interview",
 						 "Prepare", "Produce", "Select", "Show", "Transfer", "Discover", "Employ", "Illustrate",
 						 "Interpret", "Manipulate","Modify", "Operate", "Practice", "Predict", "Relate schedule", "Sketch",
-						 "Use write", "Act", "Administer", "Associate", "Build", "Calculate", "Categorise", "Classify",
+						 "write", "Act", "Administer", "Associate", "Build", "Calculate", "Categorise", "Classify",
 						 "Connect", "Correlation", "Develop", "Dramatise", "Experiment", "With", "Group", "Identify",
 						 "Link", "Make use of", "Model", "Organise", "Perform", "Plan", "Relate", "Represent", "Simulate",
 						 "Summarise", "Teach", "Translate"],
@@ -69,10 +92,10 @@ function dataObj()
 					   "Improve", "Innovate", "Make up", "Maximise", "Minimise", "Model", "Modify", "Original", "Originate",
 					   "Predict", "Reframe", "Simplify", "Solve", "Speculate", "Substitute", "Suppose", "Tabulate", "Test", 
 					   "Theorise", "Think", "Transform", "Visualise"],
-          "evaluation":["Judge", "Recommend", "Critique", "Justify", "Appraise", "Argue", "Assess", "Choose", "Conclude", 
+          "evaluation":["Judge", "Recommend", "Critique", "Justify", "Appraise", "Argue", "Assess", "Choose", "Code", "Conclude", 
 						"Decide", "Evaluate", "Predict", "Prioritize", "Prove", "Rank", "Rate", "Select", "Attach", "Compare", 
 						"Contrast", "Defend", "Describe", "Discriminate", "Estimate", "Explain", "Interpret", "Relate",
-						"Summarize", "Support", "Value", "Agree", "Award", "Bad", "Consider", "Convince", "Criteria", 
+						"Summarize", "Support", "Value", "Valuate", "Agree", "Award", "Bad", "Consider", "Convince", "Criteria", 
 						"Criticise", "Debate", "Deduct", "Determine", "Disprove", "Dispute", "Effective", "Give reasons", "Good",
 						"Grade", "How do we", "Know", "Importance", "Infer", "Influence", "Mark", "Measure", "Opinion", 
 						"Perceive", "Persuade", "Prioritise", "Rule on", "Test", "Useful", "Validate", "Why"]

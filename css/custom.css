@@ -136,6 +136,17 @@
    width:100%;
    height:400px;
 }
+.size2
+{
+   width:100%;
+   height:350px;
+}
+.size3
+{
+   width:100%;
+   height:50px;
+   font-size:25px;
+}
 .highlight
 {
     background-color:black
@@ -186,4 +197,8 @@ pre {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}						
+}	
+#level
+{
+    float:right;
+}					
