@@ -96,7 +96,7 @@ function dataObj()
 						"Decide", "Evaluate", "Predict", "Prioritize", "Prove", "Rank", "Rate", "Select", "Attach", "Compare", 
 						"Contrast", "Defend", "Describe", "Discriminate", "Estimate", "Explain", "Interpret", "Relate",
 						"Summarize", "Support", "Value", "Valuate", "Agree", "Award", "Bad", "Consider", "Convince", "Criteria", 
-						"Criticise", "Debate", "Deduct", "Determine", "Disprove", "Dispute", "Effective", "Give reasons", "Good",
+						"Criticise", "Debate", "Deduct", "Determine", "Disprove", "Dispute", "Effective", "Give", "Give reasons", "Good",
 						"Grade", "How do we", "Know", "Importance", "Infer", "Influence", "Mark", "Measure", "Opinion", 
 						"Perceive", "Persuade", "Prioritise", "Rule on", "Test", "Useful", "Validate", "Why"]
           }
