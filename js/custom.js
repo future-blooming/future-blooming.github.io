@@ -80,7 +80,7 @@ function dataObj()
 					  "Infer", "Interpret", "Model", "Outline", "Point out", "Question", "Select", "Subdivide", "Test", 
 					  "Arrange", "Assumption", "Categorise", "Cause and", "Effect", "Choose", "Difference", "Discover", 
 					  "Dissect", "Distinction", "Divide", "Establish", "Find", "Focus", "Function", "Group", "Highlight", 
-					  "In-depth", "Discussion", "Inference", "Inspect", "Investigate", "Isolate", "List", "Motive", "Omit", 
+					  "In-depth", "Discussion", "Inference", "Inspect", "Investigate", "Isolate", "Motive", "Omit", 
 					  "Order", "Organise", "Point out", "Prioritize", "Rank", "Reason", "Relationships", "Reorganise", "See", 
 					  "Similar to", "Simplify", "Survey", "Take part in", "Test for", "Theme", "Comparing"],
           "synthesis":["Create", "Design", "Hypothesize", "Invent", "Develop", "Compose", "Construct", "Integrate", "Make",
