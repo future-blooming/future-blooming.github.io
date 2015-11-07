@@ -72,7 +72,7 @@ function dataObj()
 						 "Interpret", "Manipulate","Modify", "Operate", "Practice", "Predict", "Relate schedule", "Sketch",
 						 "write", "Act", "Administer", "Associate", "Build", "Calculate", "Categorise", "Classify",
 						 "Connect", "Correlation", "Develop", "Dramatise", "Experiment", "With", "Group", "Identify",
-						 "Link", "Make use of", "Model", "Organise", "Perform", "Plan", "Relate", "Represent", "Simulate",
+						 "Link", "Make use of", "Model", "Organise", "Perform", "Pick", "Plan", "Relate", "Represent", "Simulate",
 						 "Summarise", "Teach", "Translate"],
           "analysis":["Analyse", "Analyze", "Categorize", "Compare", "Contrast", "Separate", "Characterize", "Classify", "Debate", "Deduce", 
 					  "Diagram", "Differentiate", "Discriminate", "Distinguish", "Examine", "Outline", "Relate", "Research", 
