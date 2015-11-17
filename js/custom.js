@@ -11,6 +11,7 @@ function changediv()
 	else
 	{
 	    inputdata = txtarea.value.replace(/\n/g,' \n ').replace(/\r/g,' \n ')
+	    inputdata = txtarea.value.replace(/\?/g,' ?').replace(/\./g,' .')
 	    splits = inputdata.split(' ')
 	    list = dataObj()
 	    
@@ -57,7 +58,7 @@ function getValue(key)
 function dataObj()
 {
     return {"knowledge":["Write", "List", "Label", "Name", "State", "Define", "Count", "Describe", "Draw", "Find", "Identify", "Match", 
-                        "Quote", "Recall", "Recite", "Sequence", "Tell", "Arrange", "Duplicate", "Memorize", "Order", "Outline", 
+                        "Quote", "Mention", "Recall", "Recite", "Sequence", "Tell", "Arrange", "Duplicate", "Memorize", "Order", "Outline", 
                         "Recognize", "Relate", "Repeat", "Reproduce", "Select", "Choose", "Copy", "How", "Listen", "Locate",
 						"Memorise", "Observe", "Omit", "Read", "Recognise", "Record", "Remember", "Retell", "Show", "Spell",
 						"Trace", "What", "When", "Where", "Which", "Who", "Why"],
@@ -67,7 +68,7 @@ function dataObj()
 						   "Infer", "Locate", "Recognize", "Rewrite", "Select", "Translate", "Ask", "Cite", "Compare",
 						   "Contrast", "Generalise", "Give examples","Give", "Match", "Observe", "Outline", "Purpose", "Relate",
 						   "Rephrase", "Show", "Summarise"],
-          "application":["Use", "Compute", "Solve", "Demonstrate", "Apply", "Construct", "Change", "Choose", "Dramatize", "Interview",
+          "application":["Use", "Compute", "Solve", "Demonstrate", "Apply", "Can", "Construct", "Change", "Choose", "Dramatize", "Interview",
 						 "Prepare", "Produce", "Select", "Show", "Transfer", "Discover", "Employ", "Illustrate",
 						 "Interpret", "Manipulate","Modify", "Operate", "Practice", "Predict", "Relate schedule", "Sketch",
 						 "write", "Act", "Administer", "Associate", "Build", "Calculate", "Categorise", "Classify",
@@ -76,14 +77,14 @@ function dataObj()
 						 "Summarise", "Teach", "Translate", "Would"],
           "analysis":["Analyse", "Analyze", "Categorize", "Compare", "Contrast", "Separate", "Characterize", "Classify", "Debate", "Deduce", 
 					  "Diagram", "Differentiate", "Discriminate", "Distinguish", "Examine", "Outline", "Relate", "Research", 
-					  "Appraise", "Breakdown", "Calculate", "Criticize", "Derive", "Experiment", "Identify", "Illustrate", 
+					  "Appraise", "Breakdown", "Calculate", "Complete", "Criticize", "Derive", "Experiment", "Identify", "Illustrate", 
 					  "Infer", "Interpret", "Model", "Outline", "Point out", "Question", "Select", "Subdivide", "Test", 
 					  "Arrange", "Assumption", "Categorise", "Cause and", "Effect", "Choose", "Difference", "Discover", 
 					  "Dissect", "Distinction", "Divide", "Establish", "Find", "Focus", "Function", "Group", "Highlight", 
 					  "In-depth", "Discussion", "Inference", "Inspect", "Investigate", "Isolate", "Motive", "Omit", 
 					  "Order", "Organise", "Point out", "Prioritize", "Rank", "Reason", "Relationships", "Reorganise", "See", 
 					  "Similar to", "Simplify", "Survey", "Take part in", "Test for", "Theme", "Comparing"],
-          "synthesis":["Create", "Design", "Hypothesize", "Invent", "Develop", "Compose", "Comment", "Construct", "Integrate", "Make",
+          "synthesis":["Create", "Complete", "Design", "Hypothesize", "Invent", "Develop", "Compose", "Comment", "Construct", "Integrate", "Make",
 					   "Organize", "Perform", "Plan", "Produce", "Propose", "Rewrite", "Arrange", "Assemble", "Categorize", 
 					   "Collect", "Combine", "Comply", "Devise", "Explain", "Formulate", "Generate", "Prepare", "Rearrange",
 					   "Reconstruct", "Relate", "Reorganize", "Revise", "Set up", "Summarize", "Synthesize", "Tell", "Write", 
