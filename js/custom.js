@@ -11,7 +11,7 @@ function changediv()
 	else
 	{
 	    inputdata = txtarea.value.replace(/\n/g,' \n ').replace(/\r/g,' \n ')
-	    inputdata = txtarea.value.replace(/\?/g,' ?').replace(/\./g,' .')
+	    //inputdata = txtarea.value.replace(/\?/g,' ?').replace(/\./g,' .')
 	    splits = inputdata.split(' ')
 	    list = dataObj()
 	    
